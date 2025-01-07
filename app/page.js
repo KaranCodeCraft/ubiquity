@@ -11,29 +11,33 @@ export default function Home() {
           alt="Hero Banner"
           className="w-full h-auto object-cover"
         />
-        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center bg-themeBrown/50">
           <motion.h1
-            className="text-white text-4xl md:text-6xl lg:text-8xl font-bold"
+            className="text-themeBeige text-4xl md:text-6xl lg:text-7xl font-bold text-center"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            // viewport={{ once: true }}
           >
-            Welcome to Our Ubiquity
+            Our Initiative towards Skill India
           </motion.h1>
         </div>
       </div>
 
-      <section className="text-gray-600 body-font">
+      {/* Gallery Section */}
+
+      <section className="bg-themeBeige text-themeBrown body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap overflow-hidden">
           <div className="flex w-full mb-20 flex-wrap">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
-              Master Cleanse Reliac Heirloom
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-themeBrown lg:w-1/3 lg:mb-0 mb-4">
+              Carving the Future of India
             </h1>
-            <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom.
+            <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base text-themeBrown">
+              We focus on enhancing the skills of every individual, empowering
+              them with the tools, knowledge, and opportunities needed to excel
+              in their chosen fields. By fostering growth, creativity, and
+              innovation, we aim to unlock their full potential and enable them
+              to contribute meaningfully to a brighter, more prosperous, and
+              inclusive future.
             </p>
           </div>
           <div className="flex flex-wrap md:-m-2 -m-1">
@@ -47,8 +51,8 @@ export default function Home() {
               >
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/500x300"
+                  className="w-full object-cover h-full object-center block border-4 border-themeGold rounded-lg"
+                  src="gallery1.jpg"
                 />
               </motion.div>
               <motion.div
@@ -60,8 +64,8 @@ export default function Home() {
               >
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/501x301"
+                  className="w-full object-cover h-full object-center block border-4 border-themeGold rounded-lg"
+                  src="gallery2.jpg"
                 />
               </motion.div>
               <motion.div
@@ -73,8 +77,8 @@ export default function Home() {
               >
                 <img
                   alt="gallery"
-                  className="w-full h-full object-cover object-center block"
-                  src="https://dummyimage.com/600x360"
+                  className="w-full h-full object-cover object-center block border-4 border-themeGold rounded-lg"
+                  src="gallery3.jpg"
                 />
               </motion.div>
             </div>
@@ -88,8 +92,8 @@ export default function Home() {
               >
                 <img
                   alt="gallery"
-                  className="w-full h-full object-cover object-center block"
-                  src="https://dummyimage.com/601x361"
+                  className="w-full h-full object-cover object-center block border-4 border-themeGold rounded-lg"
+                  src="gallery4.jpg"
                 />
               </motion.div>
               <motion.div
@@ -101,8 +105,8 @@ export default function Home() {
               >
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/502x302"
+                  className="w-full object-cover h-full object-center block border-4 border-themeGold rounded-lg"
+                  src="gallery5.jpg"
                 />
               </motion.div>
               <motion.div
@@ -114,21 +118,23 @@ export default function Home() {
               >
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/503x303"
+                  className="w-full object-cover h-full object-center block border-4 border-themeGold rounded-lg"
+                  src="gallery6.jpg"
                 />
               </motion.div>
             </div>
           </div>
         </div>
       </section>
-      <section className="text-gray-600 body-font">
+
+      {/* About Section */}
+      <section className="bg-themeBeige text-themeBrown body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0">
             <motion.img
-              src="https://dummyimage.com/600x400"
+              src="gallery7.jpg"
               alt="About Image"
-              className="object-cover object-center w-full h-64 md:h-96 rounded-lg shadow-lg"
+              className="object-cover object-center w-full h-64 md:h-96 rounded-lg shadow-lg border-4 border-themeGold"
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
@@ -136,19 +142,19 @@ export default function Home() {
           </div>
           <div className="lg:w-1/2 w-full lg:pl-12">
             <motion.h2
-              className="text-3xl font-medium text-gray-900 mb-4"
+              className="text-3xl font-medium text-themeBrown mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
               About Us
             </motion.h2>
-            <p className="leading-relaxed text-lg mb-6">
+            <p className="leading-relaxed text-lg mb-6 text-themeBrown">
               We are a passionate team committed to bringing innovative
               solutions and services. Our goal is to create an impactful user
               experience and build products that improve lives.
             </p>
-            <p className="leading-relaxed text-lg mb-6">
+            <p className="leading-relaxed text-lg mb-6 text-themeBrown">
               Our journey started with a vision to revolutionize the industry,
               and through hard work and dedication, we’ve been able to make it a
               reality. We believe in delivering excellence and continuously
@@ -156,7 +162,7 @@ export default function Home() {
             </p>
             <motion.a
               href="#"
-              className="text-indigo-500 inline-flex items-center mt-4"
+              className="text-themeGold inline-flex items-center mt-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -181,43 +187,36 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font">
+      {/* Courses Section */}
+      <section className="bg-themeBeige text-themeBrown body-font">
         <div className="container px-5 py-24 mx-auto overflow-hidden">
           <div className="flex flex-wrap -m-4">
+            {/* Course 1 */}
             <motion.div
               className="p-4 lg:w-1/3"
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  CATEGORY
+              <div className="h-full bg-themeGold bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 className="tracking-widest text-xs title-font font-medium text-themeBrown mb-1">
+                  COURSE
                 </h2>
-                <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                  Raclette Blueberry Nextious Level
+                <h1 className="title-font sm:text-2xl text-xl font-medium text-themeBrown mb-3">
+                  SAMPLING TAILOR COURSE
                 </h1>
-                <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                <p className="leading-6 text-justify text-themeBrown mb-3">
+                  This comprehensive Sampling Tailor Course is designed for
+                  individuals who wish to specialize in creating garment samples
+                  for the fashion industry. Participants will learn the
+                  fundamentals of pattern making, fabric selection, and garment
+                  construction, equipping them with the skills needed to create
+                  high-quality sample garments. The curriculum covers essential
+                  techniques in precision cutting, stitching, and fitting to
+                  ensure garments meet industry standards.
                 </p>
-                <a className="text-indigo-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                  <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <div className="text-center mt-1 leading-none flex justify-center absolute bottom-0 left-0 w-full py-2">
+                  <span className="text-themeBrown mr-3 inline-flex items-center leading-none text-sm pr-3 py-1">
                     <svg
                       className="w-4 h-4 mr-1"
                       stroke="currentColor"
@@ -232,58 +231,37 @@ export default function Home() {
                     </svg>
                     1.2K
                   </span>
-                  <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    6
-                  </span>
                 </div>
               </div>
             </motion.div>
 
+            {/* Course 2 */}
             <motion.div
               className="p-4 lg:w-1/3"
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  CATEGORY
+              <div className="h-full bg-themeGold bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 className="tracking-widest text-xs title-font font-medium text-themeBrown mb-1">
+                  COURSE
                 </h2>
-                <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                  Ennui Snackwave Thundercats
+                <h1 className="title-font sm:text-2xl text-xl font-medium text-themeBrown mb-3">
+                  SCRIPT WRITING COURSE
                 </h1>
-                <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                <p className="leading-6 text-justify text-themeBrown mb-3">
+                  This course is designed to equip aspiring writers with the
+                  essential skills required for crafting compelling scripts
+                  across various media platforms, including film, television,
+                  and digital content. Participants will learn the key elements
+                  of storytelling, such as plot structure, character
+                  development, and dialogue writing. The curriculum also
+                  emphasizes genre-specific writing techniques, enabling
+                  students to explore a variety of formats, including drama,
+                  comedy, thriller, and more.
                 </p>
-                <a className="text-indigo-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                  <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <div className="text-center mt-1 leading-none flex justify-center absolute bottom-0 left-0 w-full py-2">
+                  <span className="text-themeBrown mr-3 inline-flex items-center leading-none text-sm pr-3 py-1">
                     <svg
                       className="w-4 h-4 mr-1"
                       stroke="currentColor"
@@ -298,58 +276,37 @@ export default function Home() {
                     </svg>
                     1.2K
                   </span>
-                  <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    6
-                  </span>
                 </div>
               </div>
             </motion.div>
 
+            {/* Course 3 */}
             <motion.div
               className="p-4 lg:w-1/3"
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  CATEGORY
+              <div className="h-full bg-themeGold bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 className="tracking-widest text-xs title-font font-medium text-themeBrown mb-1">
+                  COURSE
                 </h2>
-                <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                  Selvage Poke Waistcoat Godard
+                <h1 className="title-font sm:text-2xl text-xl font-medium text-themeBrown mb-3">
+                  ELECTRICIAN COURSES
                 </h1>
-                <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                <p className="leading-6 text-justify text-themeBrown mb-3">
+                  This comprehensive Electrician Course is designed to equip
+                  students with the essential skills needed to pursue a career
+                  as a certified electrician. The course covers fundamental
+                  electrical theory, safety standards, and hands-on training in
+                  wiring, installation, and troubleshooting electrical systems.
+                  Participants will learn to work with a variety of electrical
+                  components, including circuit breakers, transformers, and
+                  wiring systems, and will gain practical experience in both
+                  residential and commercial electrical work.
                 </p>
-                <a className="text-indigo-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                  <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <div className="text-center mt-1 leading-none flex justify-center absolute bottom-0 left-0 w-full py-2">
+                  <span className="text-themeBrown mr-3 inline-flex items-center leading-none text-sm pr-3 py-1">
                     <svg
                       className="w-4 h-4 mr-1"
                       stroke="currentColor"
@@ -363,20 +320,6 @@ export default function Home() {
                       <circle cx="12" cy="12" r="3"></circle>
                     </svg>
                     1.2K
-                  </span>
-                  <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    6
                   </span>
                 </div>
               </div>
@@ -385,13 +328,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font relative">
+      {/* Contact Us */}
+      <section className="text-themeBrown body-font relative bg-themeBeige">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-themeBrown">
               Contact Us
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-themeBrown">
               Kindly fill the form to contact Us!!
             </p>
           </div>
@@ -401,7 +345,7 @@ export default function Home() {
                 <div className="relative">
                   <label
                     htmlFor="name"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-themeBrown"
                   >
                     Name
                   </label>
@@ -409,7 +353,7 @@ export default function Home() {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-themeGold bg-opacity-50 rounded border border-themeBrown focus:border-themePrimary focus:bg-white focus:ring-2 focus:ring-themePrimaryLight text-base outline-none text-themeBrown py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -417,7 +361,7 @@ export default function Home() {
                 <div className="relative">
                   <label
                     htmlFor="email"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-themeBrown"
                   >
                     Email
                   </label>
@@ -425,7 +369,7 @@ export default function Home() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-themeGold bg-opacity-50 rounded border border-themeBrown focus:border-themePrimary focus:bg-white focus:ring-2 focus:ring-themePrimaryLight text-base outline-none text-themeBrown py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -433,19 +377,19 @@ export default function Home() {
                 <div className="relative">
                   <label
                     htmlFor="message"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-themeBrown"
                   >
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-themeGold bg-opacity-50 rounded border border-themeBrown focus:border-themePrimary focus:bg-white focus:ring-2 focus:ring-themePrimaryLight h-32 text-base outline-none text-themeBrown py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                <button className="flex mx-auto w-full text-white justify-center bg-themeGold border-0 py-2 px-8 focus:outline-none hover:bg-themePrimary rounded text-lg transition-all duration-200 ease-in-out">
                   Submit
                 </button>
               </div>

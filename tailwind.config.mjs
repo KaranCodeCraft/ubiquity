@@ -10,6 +10,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        themeGreen: "#B6CBBD", // Light Green
+        themeBrown: "#754E1A", // Dark Brown
+        themeGold: "#CBA35C", // Gold
+        themeBeige: "#F8E1B7", // Beige
       },
     },
   },
