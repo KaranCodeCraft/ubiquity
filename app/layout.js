@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Single Page Applicaion",
-  description: "Application created by Dev Karan",
+  title: "Ubiquity",
+  description: "Skill India Mission",
 };
 
 export default function RootLayout({ children }) {

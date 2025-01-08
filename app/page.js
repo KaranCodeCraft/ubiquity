@@ -1,11 +1,15 @@
 "use client";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useState, useEffect } from "react";
+
+
 
 export default function Home() {
+
+  
   return (
     <>
-      <div className="relative">
+      <div className="relative overflow-hidden max-h-screen">
         <img
           src="1.png"
           alt="Hero Banner"
@@ -22,6 +26,7 @@ export default function Home() {
           </motion.h1>
         </div>
       </div>
+    
 
       {/* Gallery Section */}
 
@@ -48,6 +53,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
                 whileHover={{ scale: 1.1 }}
+                // viewport={{amount: "all"}}
               >
                 <img
                   alt="gallery"
@@ -126,6 +132,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+    
 
       {/* About Section */}
       <section className="bg-themeBeige text-themeBrown body-font">
