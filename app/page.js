@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 
@@ -10,8 +11,10 @@ export default function Home() {
   return (
     <>
       <div className="relative overflow-hidden max-h-screen">
-        <img
-          src="1.png"
+        <Image
+          src="/1.png"
+          width={200}
+          height={200}
           alt="Hero Banner"
           className="w-full h-auto object-cover"
         />
@@ -26,7 +29,6 @@ export default function Home() {
           </motion.h1>
         </div>
       </div>
-    
 
       {/* Gallery Section */}
 
@@ -55,10 +57,13 @@ export default function Home() {
                 whileHover={{ scale: 1.1 }}
                 // viewport={{amount: "all"}}
               >
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   alt="gallery"
                   className="w-full object-cover h-full object-center block border-4 border-themeGold rounded-lg"
-                  src="gallery1.jpg"
+                  src="/gallery1.jpg"
+                  loading="lazy"
                 />
               </motion.div>
               <motion.div
@@ -68,10 +73,13 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 whileHover={{ scale: 1.1 }}
               >
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   alt="gallery"
                   className="w-full object-cover h-full object-center block border-4 border-themeGold rounded-lg"
-                  src="gallery2.jpg"
+                  src="/gallery2.jpg"
+                  loading="lazy"
                 />
               </motion.div>
               <motion.div
@@ -81,10 +89,13 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 whileHover={{ scale: 1.1 }}
               >
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   alt="gallery"
                   className="w-full h-full object-cover object-center block border-4 border-themeGold rounded-lg"
-                  src="gallery3.jpg"
+                  src="/gallery3.jpg"
+                  loading="lazy"
                 />
               </motion.div>
             </div>
@@ -96,10 +107,13 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 whileHover={{ scale: 1.1 }}
               >
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   alt="gallery"
                   className="w-full h-full object-cover object-center block border-4 border-themeGold rounded-lg"
-                  src="gallery4.jpg"
+                  src="/gallery4.jpg"
+                  loading="lazy"
                 />
               </motion.div>
               <motion.div
@@ -109,10 +123,13 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 whileHover={{ scale: 1.1 }}
               >
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   alt="gallery"
                   className="w-full object-cover h-full object-center block border-4 border-themeGold rounded-lg"
-                  src="gallery5.jpg"
+                  src="/gallery5.jpg"
+                  loading="lazy"
                 />
               </motion.div>
               <motion.div
@@ -122,18 +139,19 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 whileHover={{ scale: 1.1 }}
               >
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   alt="gallery"
                   className="w-full object-cover h-full object-center block border-4 border-themeGold rounded-lg"
-                  src="gallery6.jpg"
+                  src="/gallery6.jpg"
+                  loading="lazy"
                 />
               </motion.div>
             </div>
           </div>
         </div>
       </section>
-
-    
 
       {/* About Section */}
       <section className="bg-themeBeige text-themeBrown body-font">
