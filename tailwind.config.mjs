@@ -8,12 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        themeGreen: "#B6CBBD", // Light Green
-        themeBrown: "#754E1A", // Dark Brown
-        themeGold: "#CBA35C", // Gold
-        themeBeige: "#F8E1B7", // Beige
+        background: "#f2e8cf", // White
+        foreground: "#0F9D58", // Dark Green
+        themeGreen: "#bc4749", // Light Green
+        themeBrown: "#6a994e", // Reused Dark Green
+        themeGold: "#a7c957", // Darker Gold with a Greenish Tone
+        themeBeige: "#f2e8cf", // White Accent
       },
     },
   },
