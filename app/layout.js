@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar/Navbar";
+import "slick-carousel/slick/slick.css";  
+import "slick-carousel/slick/slick-theme.css";  
 import Footer from "@/components/layout/Footer";
 import Navbarin from "@/components/layout/Navbar";
 
