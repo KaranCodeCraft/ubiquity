@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <>
@@ -19,10 +21,10 @@ export default function Navbar() {
             <span className="ml-3 text-xl font-semibold">Ubiquity</span>
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-700">Home</a>
-            <a className="mr-5 hover:text-gray-700">About</a>
-            <a className="mr-5 hover:text-gray-700">Services</a>
-            <a className="mr-5 hover:text-gray-700">Contact</a>
+            <Link href={"/"} className="mr-5 hover:text-gray-700">Home</Link>
+            <Link href={"/about-us"} className="mr-5 hover:text-gray-700">About</Link>
+            <Link href={"/services"} className="mr-5 hover:text-gray-700">Services</Link>
+            <Link href={"/contact-us"} className="mr-5 hover:text-gray-700">Contact</Link>
           </nav>
         </div>
       </header>
