@@ -2,6 +2,12 @@
 
 import Image from "next/image";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const OurPartnersLogoSlider = ({ images, title }) => {
   const settings = {
@@ -17,39 +23,41 @@ const OurPartnersLogoSlider = ({ images, title }) => {
     responsive: [
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
         breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
         breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
       },
     ],
   };
 
   return (
-    <div className="mx-auto container ">
+    <motion.div
+      className="mx-auto container"
+      initial="hidden"
+      animate="visible"
+      variants={fadeInUp}
+    >
       {title && (
-        <h2 className="theme-clr text-start text-4xl font-bold">{title}</h2>
+        <motion.h2
+          className="theme-clr text-start text-3xl font-bold"
+          variants={fadeInUp}
+        >
+          {title}
+        </motion.h2>
       )}
-      <div className="py-4 ">
+      <div className="py-4">
         <Slider {...settings}>
-          {images?.map(( item, index ) => (
-            <div
+          {images?.map((item, index) => (
+            <motion.div
               key={index}
               className="flex justify-center items-center h-full"
+              whileHover={{ scale: 1.1 }} // Slight hover effect
             >
               {item?.imgSrc && (
                 <Image
@@ -57,15 +65,14 @@ const OurPartnersLogoSlider = ({ images, title }) => {
                   alt={`Partner ${index + 1}`}
                   width={116}
                   height={50}
-                  className="bg-white h-32 w-52 p-3 rounded-xl "
+                  className="bg-white h-32 w-52 p-3 rounded-xl"
                 />
               )}
-            </div>
+            </motion.div>
           ))}
         </Slider>
       </div>
-      <hr />
-    </div>
+    </motion.div>
   );
 };
 
