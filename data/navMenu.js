@@ -9,16 +9,16 @@ export const NavMenu = [
     },
     {
         name: 'Awards & Recognitions', href: '', current: false, subItems: [
-            { name: `Government Partners`, href: '/approvals-and-collabrations/government-partnership', current: false },
-            { name: `Placement Partners`, href: '/approvals-and-collabrations/placement-tie-ups', current: false },
-            { name: `Industry Partners`, href: '/approvals-and-collabrations/industry-tie-ups', current: false },
-            { name: `Our  Approvals`, href: '/approvals-and-collabrations/approvals', current: false },
+            { name: `Government Partners`, href: '/awards-and-recognitions/government-partnership', current: false },
+            { name: `Placement Partners`, href: '/awards-and-recognitions/placement-tie-ups', current: false },
+            { name: `Industry Partners`, href: '/awards-and-recognitions/industry-tie-ups', current: false },
+            { name: `Our  Approvals`, href: '/awards-and-recognitions/approvals', current: false },
         ]
     },
     {
         name: 'Our services', href: '', current: false, subItems: [
             { name: `Projects`, href: '/our-projects', current: false },
-            { name: 'Our Expertise', href: '/our-expertise', current: false },
+            { name: 'Our Specialties', href: '/our-specialities', current: false },
         ]
     },
 

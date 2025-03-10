@@ -4,13 +4,13 @@ import React from "react";
 const PageLinks = ({ items, title, imageUrl }) => {
   return (
     <section
-      className="relative h-[200px] flex items-center justify-center bg-cover bg-center"
+      className="relative h-[200px] flex items-center justify-center bg-cover bg-center "
       style={{
         backgroundImage: `url(${imageUrl})`,
       }}
     >
       {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 bg-gray-600 opacity-50"></div>
 
       {/* Content */}
       <div className="relative z-10 text-white text-center">
