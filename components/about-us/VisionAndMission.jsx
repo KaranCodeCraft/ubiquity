@@ -34,7 +34,7 @@ const VisionAndMission = () => {
           </div>
         </div>
 
-        <h2 className="text-3xl text-green-600 font-bold py-5 text-center">
+        <h2 className="text-3xl text-green-600 font-bold py-5 text-start md:text-center">
           Our Vision
         </h2>
         <div className="vision flex flex-col md:flex-row">

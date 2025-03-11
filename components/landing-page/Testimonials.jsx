@@ -81,15 +81,6 @@ const Testimonials = () => {
                 {items.comment}
               </h4>
               <hr style={{ color: "#D7D5D5" }} />
-              <div className="flex justify-between">
-                {/* <div className="flex">
-                  <StarIcon width={20} className="text-gold" />
-                  <StarIcon width={20} className="text-gold" />
-                  <StarIcon width={20} className="text-gold" />
-                  <StarIcon width={20} className="text-gold" />
-                  <StarIcon width={20} className="text-lightgray" />
-                </div> */}
-              </div>
             </div>
           </div>
         ))}

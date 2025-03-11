@@ -5,6 +5,7 @@ import PageLinks from "@/components/common/pageLink";
 import { ourRecognitions } from "@/lib/constants";
 import { useEffect, useState } from "react";
 import { FaFilePdf } from "react-icons/fa";
+import AnimatedHeading from "@/components/common/Heading";
 
 const AwardsAndApprovalsPage = () => {
   const [selectedPdf, setSelectedPdf] = useState(null);
@@ -34,10 +35,7 @@ const AwardsAndApprovalsPage = () => {
 
       <div className="container mx-auto py-8 px-5">
         <div className="certificates">
-          <h2 className="text-4xl theme-clr font-bold mb-4 pl-6">
-            Our Recognitions
-          </h2>
-
+          <AnimatedHeading text="Approvals " variant="fadeDown" />
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-5 pb-10"
             initial="hidden"

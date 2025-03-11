@@ -1,8 +1,7 @@
 "use client";
-
 import PageLinks from "@/components/common/pageLink";
 import ContactForm from "@/components/contact-us/ContactForm";
-import careerImg from "@/public/images/career.jpg"; // Correct Import
+import careerImg from "@/public/images/career.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
