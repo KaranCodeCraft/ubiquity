@@ -6,7 +6,7 @@ import AchievementsSection from "@/components/common/AchievementsSection";
 import PageLinks from "@/components/common/pageLink";
 import useRandomImages from "@/lib/hooks/useRandomImages";
 import { ourExpertiesImages } from "@/lib/constants";
-
+import VisionAndMission from "@/components/about-us/VisionAndMission";
 const AboutUsPage = () => {
   const { images, loading, error } = useRandomImages(ourExpertiesImages);
 
@@ -14,7 +14,7 @@ const AboutUsPage = () => {
     <>
       <PageLinks
         title="About Ubiquity"
-        imageUrl="/assets/pagelinks/team.webp"
+        imageUrl="/images/pagelinks/team.webp"
         items={[
           { name: "Home", link: "/" },
           { name: "About Ubiquity", link: "/about-us" },
@@ -101,7 +101,13 @@ const AboutUsPage = () => {
             )}
           </motion.div>
         </motion.div>
+      </div>
 
+      <div className="vision and mission bg-green-50">
+        <VisionAndMission />
+      </div>
+
+      <div className="container mx-auto px-4">
         <motion.div
           className="py-5"
           initial={{ opacity: 0, y: 20 }}
