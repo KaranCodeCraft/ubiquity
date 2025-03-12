@@ -18,7 +18,7 @@ export default function Home() {
       {/* -------------- Banner Section -------------------------- */}
       <section className="relative overflow-hidden max-h-screen ">
         <Image
-          src="/1.png"
+          src="/images/banners/ubiquity.jpg"
           width={200}
           height={200}
           alt="Hero Banner"
